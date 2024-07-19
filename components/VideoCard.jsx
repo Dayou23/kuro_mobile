@@ -9,6 +9,7 @@ const VideoCard = ({
   creator,
   avatar,
   thumbnail,
+  prompt,
   video,
   username = "",
 }) => {
@@ -28,7 +29,7 @@ const VideoCard = ({
 
           <View className="flex justify-center flex-1 ml-3 gap-y-1">
             <Text
-              className="font-psemibold text-sm text-black"
+              className="font-psemibold text-base font-medium text-black"
               numberOfLines={1}
             >
               {title}
@@ -50,7 +51,9 @@ const VideoCard = ({
           />
         </View>
       </View>
-
+      <View className="w-full mt-1 ">
+        <Text className="text-gray-500 text-sm">{prompt}</Text>
+      </View>
       {play ? (
         <Video
           source={{ uri: video }}

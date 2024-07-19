@@ -33,13 +33,16 @@ export default function App() {
           />
           <View className="relative mt-5">
             <Text className="text-3xl text-black font-bold text-center">
-              Discover Endless{"\n"}
-              Possibilities with <Text className="text-primary">Kuro</Text>
+              {/* Hi, and welcome to the <Text className="text-primary">Kuro</Text>{" "}
+              platform. */}
+              Explore the latest tech trends and innovations with us!
             </Text>
           </View>
           <Text className="text-sm font-medium text-gray-700 mt-7 text-center">
-            Where Creativity Meets Innovation: Embark on a Journey of Limitless
-            Exploration with Aora
+            Experience the forefront of technology at our upcoming IT event!
+            Dive into cutting-edge innovations, engage with experts, and network
+            with peers. Don't miss your chance to shape the future of digital
+            technology!
           </Text>
           <CustomButton
             title="Continue"

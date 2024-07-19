@@ -104,7 +104,7 @@ const Create = () => {
       <ScrollView className="px-4 my-6">
         <View className="flex flex-row justify-between ">
           <Text className="text-2xl text-black font-psemibold">
-            Upload Video
+            create post
           </Text>
           <Image
             source={images.logo}

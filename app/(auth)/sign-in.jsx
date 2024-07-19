@@ -23,11 +23,6 @@ const signIn = () => {
   const [isSubmitting, setSubmitting] = useState(false);
   const { setUser, setIsLogged } = useGlobalContext();
 
-  const logout = async () => {
-    await signOut();
-    // router.replace("/sign-in");
-  };
-
   const submit = async () => {
     if (form.username === "" || form.email === "" || form.password === "") {
       Alert.alert("Error", "Please fill in all fields");
@@ -83,12 +78,6 @@ const signIn = () => {
             textStyles="text-slate-100"
             isLoading={isSubmitting}
           />
-          <TouchableOpacity
-            onPress={logout}
-            className="flex w-full items-end mb-10"
-          >
-            <Text className="text-lg text-gray-800">SignOut</Text>
-          </TouchableOpacity>
           <View className="flex flex-row gap-2 mt-0 items-center">
             <Text className="text-lg text-gray-800">Not a member?</Text>
             <Link href="/sign-up" className="text-lg font-semibold text-black">

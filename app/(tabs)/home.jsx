@@ -40,6 +40,7 @@ const Home = () => {
           <VideoCard
             title={item.title}
             thumbnail={item.thumbnail}
+            prompt={item.prompt}
             video={item.video}
             username={(user && user.username) || ""}
             creator={item.creator.username}
